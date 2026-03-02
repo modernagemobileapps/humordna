@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HumorDNA - Jokes, Quotes & Memes</title>
+    <meta name="description" content="AI-powered daily jokes app with personalized comedy and humor for endless laughs. Available in 8 languages.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #fff;
+            min-height: 100vh;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .app-icon {
+            width: 120px; height: 120px; border-radius: 28px;
+            background: linear-gradient(135deg, #ff6b35, #f7c948);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 60px; margin: 0 auto 24px;
+            box-shadow: 0 8px 32px rgba(255, 107, 53, 0.4);
+        }
+        h1 {
+            font-size: 3rem; font-weight: 800;
+            background: linear-gradient(90deg, #f7c948, #ff6b35, #ff3366);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 12px;
+        }
+        .tagline { font-size: 1.25rem; color: #b8b5ff; margin-bottom: 32px; }
+        .badge-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; }
+        .badge {
+            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 50px; padding: 8px 20px; font-size: 0.85rem;
+        }
+        .features {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px; max-width: 900px; margin: 0 auto; padding: 0 20px 48px;
+        }
+        .feature-card {
+            background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px; padding: 28px 24px; text-align: center;
+            transition: transform 0.3s;
+        }
+        .feature-card:hover { transform: translateY(-4px); }
+        .feature-icon { font-size: 2.5rem; margin-bottom: 14px; }
+        .feature-card h3 { font-size: 1.05rem; margin-bottom: 8px; color: #f7c948; }
+        .feature-card p { font-size: 0.88rem; color: #a9a6d6; line-height: 1.5; }
+        .cta-section { text-align: center; padding: 40px 20px 60px; }
+        .play-badge { display: inline-block; transition: transform 0.2s; }
+        .play-badge:hover { transform: scale(1.05); }
+        .play-badge img { height: 72px; }
+        .languages { text-align: center; padding: 0 20px 48px; color: #a9a6d6; font-size: 0.9rem; }
+        .languages span { color: #f7c948; font-weight: 600; }
+        footer {
+            text-align: center; padding: 32px 20px;
+            border-top: 1px solid rgba(255,255,255,0.08); color: #6b68a0; font-size: 0.8rem;
+        }
+        footer a { color: #b8b5ff; text-decoration: none; }
+        @media (max-width: 600px) { h1 { font-size: 2rem; } .tagline { font-size: 1rem; } }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="app-icon">🤣</div>
+        <h1>HumorDNA</h1>
+        <p class="tagline">Discover Your Perfect Sense of Humor — Powered by AI</p>
+        <div class="badge-row">
+            <span class="badge">🧬 AI Personalization</span>
+            <span class="badge">🌍 8 Languages</span>
+            <span class="badge">📚 1,800+ Jokes</span>
+            <span class="badge">🎰 Spin & Win</span>
+        </div>
+    </section>
+    <section class="features">
+        <div class="feature-card"><div class="feature-icon">🧬</div><h3>Humor DNA Profile</h3><p>Our AI learns what makes you laugh and builds a unique comedy fingerprint just for you.</p></div>
+        <div class="feature-card"><div class="feature-icon">😂</div><h3>22 Joke Categories</h3><p>Dad jokes, programming humor, puns, dark comedy, riddles, roasts, and more.</p></div>
+        <div class="feature-card"><div class="feature-icon">🎰</div><h3>Spin the Wheel</h3><p>Win premium subscriptions, joke packs, and exclusive rewards with daily free spins.</p></div>
+        <div class="feature-card"><div class="feature-icon">👕</div><h3>Custom T-Shirts</h3><p>Love a joke? Get it printed on a high-quality t-shirt with worldwide shipping.</p></div>
+        <div class="feature-card"><div class="feature-icon">🎙️</div><h3>Text-to-Speech</h3><p>Listen to jokes with natural voice narration in your preferred language.</p></div>
+        <div class="feature-card"><div class="feature-icon">🏆</div><h3>Achievements & Streaks</h3><p>Track your humor journey, unlock badges, and maintain daily login streaks.</p></div>
+    </section>
+    <section class="languages">Available in <span>8 languages</span>: English, Spanish, French, German, Italian, Portuguese, Chinese & Japanese</section>
+    <section class="cta-section">
+        <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.humordna.app" target="_blank">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+        </a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Modern Age Mobile Apps. All rights reserved.</p>
+        <p style="margin-top:8px"><a href="mailto:ModernAgeMobileApps@yahoo.com">Contact Us</a></p>
+    </footer>
+</body>
+</html>
